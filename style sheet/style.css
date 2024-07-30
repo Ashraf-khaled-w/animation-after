@@ -1,0 +1,219 @@
+/* .container{
+    /* display: flex;
+    justify-content: center; 
+} */
+.head{
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+.head hr{
+    width: 90px;
+    margin-top: -25px;
+    height: 4px;
+    background-color: blue;
+    border: none;
+}
+.mainbox{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid grey;
+    width:300px ;
+}
+.box1::after{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    background-color: grey;
+    opacity: 0;
+    transition: 2s;
+}
+.box1 h3{
+    opacity: 0.5;
+}
+.box1 .circle{
+    border: 1px solid blue;
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    /* margin-left: 150px; */
+}
+.box1 .circle h4{
+    font-size: 60px;
+    margin: 0px;
+    margin-top:20px ;
+    font-weight: bold;
+}
+.box1 .circle p{
+    font-weight: bold;
+}
+.box1>p {
+    font-size: 30px;
+    line-height: 50px;
+    opacity: 0.5;
+}
+
+.box1>.button button{
+    /* position: absolute; */
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+}
+.box2{ 
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    width: 300px;
+}
+.box2 h3 {
+    opacity: 0.5;
+}
+.box2 .circle {
+    border: 1px solid blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* margin-left: 150px; */
+}
+.box2 .circle h4 {
+    font-size: 60px;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.box2 .circle p {
+    font-weight: bold;
+}
+.box2>p {
+    font-size: 30px;
+    line-height: 50px;
+    opacity: 0.5;
+}
+.box2>.button button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.box2::after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    background-color: grey;
+    opacity: 0;
+    transition: 2s;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    border: 1px solid grey;
+    width: 300px;
+}
+.box3 h3 {
+    opacity: 0.5;
+}
+.box3 .circle {
+    border: 1px solid blue;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* margin-left: 150px; */
+}
+.box3 .circle h4 {
+    font-size: 60px;
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.box3 .circle p {
+    font-weight: bold;
+}
+.box3>p {
+    font-size: 30px;
+    line-height: 50px;
+    opacity: 0.5;
+}
+.box3>.button button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.box3::after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    background-color: grey;
+    opacity: 0;
+    transition: 2s;
+}
+.box1:hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 80%;
+    top: 0;
+    background-color: grey;
+    opacity: 0.5;
+    transition: 3s;
+}
+.box2:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 80%;
+    top: 0;
+    background-color: grey;
+    opacity: 0.5;
+    transition: 3s;
+}
+.box3:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 80%;
+    top: 0;
+    background-color: grey;
+    opacity: 0.5;
+    transition: 3s;
+}
